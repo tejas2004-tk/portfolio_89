@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - TEJAS KOLE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .profile-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 60px 0;
+            border-radius: 15px;
+        }
+        
+        .profile-image {
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .skill-progress {
+            height: 10px;
+            border-radius: 5px;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline-item {
+            padding: 20px;
+            border-left: 2px solid #0d6efd;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 24px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #0d6efd;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0d6efd;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-code me-2"></i>TEJAS KOLE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-section">
+        <div class="container text-center">
+            
+            <h2 class="mb-4">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead mb-4">Hello! I'm Tejas kole, a passionate Computer Science and Engineering student with a focus on full-stack development. I specialize in building robust web applications using Python, Flask, PostgreSQL, and modern frontend technologies.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="projects.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-outline-primary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <h3 class="mb-4">Technical Skills</h3>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>Python & Flask</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>SQL & PostgreSQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between mb-1">
+                        <span>HTML, CSS & JavaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-4">Education & Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Computer Science & Engineering</h4>
+                        <p class="text-muted">University Name • 2022-2026</p>
+                        <p>Currently pursuing my degree with a focus on web development and database management.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Web Development Intern</h4>
+                        <p class="text-muted">Company Name • Summer 2024</p>
+                        <p>Worked on full-stack development projects using Python, Flask, and PostgreSQL.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h3 class="mb-4">Interests & Hobbies</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code fa-3x text-primary mb-3"></i>
+                    <h4>Coding</h4>
+                    <p>Love exploring new technologies and building innovative solutions.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-book fa-3x text-primary mb-3"></i>
+                    <h4>Learning</h4>
+                    <p>Constantly expanding my knowledge in software development.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                    <h4>Community</h4>
+                    <p>Active participant in tech communities and hackathons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            </div>
+           
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - TEJAS KOLE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .projects-header {
+            background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+            padding: 60px 0;
+            color: white;
+        }
+        
+        .project-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-image {
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        
+        .tech-badge {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            margin: 0 5px 5px 0;
+            display: inline-block;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #0d6efd;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .github-stats {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 50px;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stat-card i {
+            font-size: 2rem;
+            color: #0d6efd;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-code me-2"></i>TEJAS KOLE
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="projects-header text-center">
+        <div class="container">
+            <h1 class="display-4 mb-3">My Projects</h1>
+            <p class="lead">Exploring innovative solutions through code</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                 
+                    <div class="card-body">
+                        <h3 class="card-title h5">Quiz Master</h3>
+                        <p class="card-text">An interactive quiz application with dynamic question generation, real-time scoring, and user progress tracking.</p>
+                        <div class="mb-3">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">Bootstrap</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/tejas2004-tk/student-dashboard.git" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title h5">nearby-hospitals</h3>
+                        <p class="card-text">A project of the hospital Management system.</p>
+                        <div class="mb-3">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="https://github.com/tejas2004-tk/nearby-hospitals.git" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </div>
+
+        <div class="github-stats">
+            <h3 class="text-center mb-4">GitHub Statistics</h3>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h4 class="h5">Repositories</h4>
+                        <p class="mb-0">15+</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="fas fa-star"></i>
+                        <h4 class="h5">Stars</h4>
+                        <p class="mb-0">50+</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h4 class="h5">Commits</h4>
+                        <p class="mb-0">200+</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h4 class="h5">Collaborators</h4>
+                        <p class="mb-0">10+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
